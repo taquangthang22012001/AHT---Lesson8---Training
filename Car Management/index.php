@@ -29,7 +29,10 @@
         </thead>
         <tbody>
             <?php
-            require 'Controller\CarController.php';
+            use Controller\CarController;
+            use Models\Car;
+            require "Model/Car.php"; 
+            require "Controller/CarController.php";
             while ($row = $cars->fetch(PDO::FETCH_ASSOC)): ?>
                 <tr>
                     <td><?= $row['id'] ?></td>

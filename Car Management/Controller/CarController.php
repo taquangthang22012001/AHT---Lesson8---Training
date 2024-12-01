@@ -1,4 +1,6 @@
 <?php
+namespace Controller;
+use Models\Car;
 require './Models/Car.php';
 
 class CarController {

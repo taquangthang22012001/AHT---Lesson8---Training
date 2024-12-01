@@ -1,4 +1,6 @@
 <?php
+namespace Models;
+use PDO;
 class Car {
     private $conn;
     private $table = "cars";
